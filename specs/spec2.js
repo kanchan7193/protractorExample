@@ -10,8 +10,7 @@ describe('Protractor Demo App', function() {
     it('should have a title', function() {
       expect(browser.getTitle()).toEqual('Super Calculator');
     });
-
-
+    
     it('should add two numbers', function(){
       obpage.firsttextbox.sendKeys(1);
       obpage.secondtextbox.sendKeys(5);
