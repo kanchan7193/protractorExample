@@ -1,4 +1,4 @@
-const op = require('./operation.page.js');
+const op = require('../page/operation.page.js');
 // spec.js
 describe('Protractor Demo App', function() {
   
