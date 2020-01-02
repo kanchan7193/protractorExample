@@ -2,7 +2,7 @@ var HtmlReporter = require('protractor-beautiful-reporter');
 exports.config = {
     framework: 'jasmine',
     seleniumAddress: 'http://localhost:4444/wd/hub',
-    specs: ['specs/spec*.js'],
+    specs: ['specs/spec5.js'],
  
    onPrepare: function() {
       // Add a screenshot reporter and store screenshots to `/tmp/screenshots`:
