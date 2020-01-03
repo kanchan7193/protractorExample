@@ -15,6 +15,27 @@ describe('Banking Manager Simple', function() {
       
       })
 
+      it('open account',function(){
+        element(by.css('[ng-click="openAccount()"]')).click();  
+        element(by.model('custId')).click();
+
+        var customerdropdwn=element.all(by.repeater('cust in Customers'));
+        
+
+        customerdropdwn.filter(function(elem, index) {
+            return elem.getText().then(function(text) {
+                return text === 'Tomalesh Maharaj';
+            });
+        }).first().click();
+
+        element(by.model('currency')).click();
+        
+        var currencySelect=element(by.model('currency'));
+        currencySelect.$('[value="Dollar"]').click();
+        element(by.css('[type="submit"]')).click();
+
+        })
+
       it('search customer',function(){
         element(by.css('[ng-click="showCust()"]')).click();
         element(by.model('searchCustomer')).sendKeys('tomalesh');
@@ -22,6 +43,9 @@ describe('Banking Manager Simple', function() {
         expect(element(by.css('div > table > tbody > tr > td:nth-child(2)')).getText()).toEqual('Maharaj');
         expect(element(by.css('div > table > tbody > tr > td:nth-child(3)')).getText()).toEqual('1010'); 
       })
-
+      
+      it('delete searched customer', function(){
+        element(by.css('[ng-click="deleteCust(cust)"]')).click();
+      })
  
 });
