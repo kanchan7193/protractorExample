@@ -2,7 +2,7 @@ class registration{
     constructor() { }
     
 
-     get username() { 
+    get username() { 
         return  element(by.css('#username'));
     }
     get password() { 

@@ -1,5 +1,5 @@
 // spec.js
-describe('Registration Page', function() {
+describe('Registration Page simple', function() {
     let username =  element(by.css('#username'));
     let password =  element(by.css('#password'));
     let userinput =  element(by.css('#formly_1_input_username_0'));

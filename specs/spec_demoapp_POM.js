@@ -1,6 +1,6 @@
 const op = require('../page/operation.page.js');
 // spec.js
-describe('Protractor Demo App', function() {
+describe('Protractor Demo App POM', function() {
   
   let obpage=new op(); 
     beforeAll(function() {
@@ -31,7 +31,7 @@ describe('Protractor Demo App', function() {
       obpage.secondtextbox.sendKeys(5);
       obpage.multiplyoption.click();
       obpage.gobutton.click();
-        expect(obpage.ou.getText()).toEqual('10'); 
+      expect(obpage.ou.getText()).toEqual('10'); 
     })    
 
     it('should divide numbers', function(){

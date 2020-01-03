@@ -1,6 +1,6 @@
 const rp = require('../page/registration.page.js');
 // spec.js
-describe('Registration Page', function() {
+describe('Registration Page pom', function() {
   let rpage =new rp(); 
   beforeAll(function() {
     browser.get('http://www.way2automation.com/angularjs-protractor/registeration/#/login');         

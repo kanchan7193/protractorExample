@@ -1,5 +1,5 @@
 // spec.js
-describe('Protractor Demo App', function() {
+describe('Protractor Demo App simple', function() {
     let firsttextbox = element(by.model('first'));
     let secondtextbox = element(by.model('second'));
     let gobutton = element(by.id('gobutton'));
