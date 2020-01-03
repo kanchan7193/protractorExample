@@ -8,3 +8,6 @@ npm run wdstart
 
 In another console :
 npm run test
+
+To run specific suite:
+npm run test -- --suite current

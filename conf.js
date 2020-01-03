@@ -5,7 +5,8 @@ exports.config = {
 
     suites: {
       simple: 'specs/spec*simple.js',
-      pom: 'specs/spec*POM.js'
+      pom: 'specs/spec*POM.js',
+      current: 'specs/spec_Bank_manager_simple.js'
     },
  
    onPrepare: function() {
